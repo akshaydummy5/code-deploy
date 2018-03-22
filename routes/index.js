@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Deployed Properly' });
+  res.render('index', { title: 'Git auto deploy feature' });
 });
 
 module.exports = router;
