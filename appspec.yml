@@ -4,11 +4,11 @@ files:
   - source: /
     destination: /home/ubuntu/node-code-deploy
 hooks:
-  BeforeInstall:
-    - location: deploy/before_install.sh
+  AfterInstall:
+    - location: deploy/after_install.sh
       timeout: 300
       runas: root
-  AfterInstall:
+  ApplicationStart:
     - location: deploy/restart_server.sh
       timeout: 300
       runas: root
