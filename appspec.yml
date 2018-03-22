@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /home/ubuntu/node-code-deploy
 hooks:
- BeforeInstall:
+  BeforeInstall:
     - location: deploy/before_install.sh
       timeout: 300
       runas: root
